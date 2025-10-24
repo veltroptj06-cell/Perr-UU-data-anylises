@@ -23,7 +23,7 @@ d = 7.5e-7
 g = 9.81
 c = (np.pi*d*d*d*(1.05-0.997)*g*10*10*10)/(6*Kb)
 def f(B, x):
-    return yass[0]*np.exp(-c*x/B[0])
+    return yass[0]*np.exp(-c*x/B[0]) + B[1]
 
 B_start = [294, 650]
 
